@@ -24,7 +24,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Dual Position Attention Time-Frequency Network for Binaural Audio Synthesis</title>
+  <title>BASUNet: a novel UNet for binaural audio synthesis</title>
   <link rel="icon" type="image/x-icon" href="static/images/logo.png">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -62,22 +62,26 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Dual Position Attention Time-Frequency Network for Binaural Audio Synthesis</h1>
+            <h1 class="title is-1 publication-title">BASUNet: a novel UNet for binaural audio synthesis</h1>
                   <div class="is-size-5 publication-authors">
                           <!-- Paper authors -->
                     <span class="author-block" style="color: #06a7e7;">
                             Changjun He
                     </span>,
                     <span class="author-block" style="color: #06a7e7;">
-                      Weiping Chen<sup><span style="color: black;">*</span></sup>
+                      Wenjie Zhang
                     </span>,
                     <span class="author-block" style="color: #06a7e7;">
-                            Mingjiang Wang
+                      Shiyun Xu
+                    </span>,
+                    <span class="author-block" style="color: #06a7e7;">
+                      Mingjiang Wang<sup><span style="color: black;">*</span></sup>
                     </span>
+
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">Harbin Institute of Technology, Harbin Institute of Technology (Shenzhen)<br>2025 IEEE International Conference on Acoustics, Speech, and Signal Processing</span>
+                    <span class="author-block"> Harbin Institute of Technology (Shenzhen)<br>EURASIP Journal on Audio, Speech and Music Processing</span>
                     <span class="eql-cntrb"><small><br><sup>*</sup>Corresponding Author</small></span>
                   </div>
 
@@ -123,7 +127,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            In applications such as virtual reality and augmented reality, binaural audio provides listeners with a more immersive experience. To synthesize binaural audio with enhanced spatial localization, especially in scenarios involving moving sound sources, accurate phase estimation is crucial. However, existing deep learning methods have yet to achieve satisfactory results in this area. To address this issue, this paper introduces a Dual Position Attention Time-Frequency Network (DPATFNet). Specifically, our approach targets the interaural differences and Doppler effects induced by sound source movement, guiding the synthesis process from monaural to binaural audio through strong positional conditions in the time-frequency domain. The network employs a Dual Position Attention Block (DPAB) to effectively focus on sound source movement and improve phase estimation performance. The proposed DPATFNet demonstrates a strong capability for synthesizing accurate binaural audio, with experimental results on the Binaural Speech dataset showing that DPATFNet achieves state-of-the-art performance in phase metrics (Phase-L2: 0.717, IPD-L2: 1.020, Wave-L2: 0.148, Amplitude-L2: 0.037).
+            Spatial audio is widely applied in various scenarios, such as virtual and augmented reality, due to its unique spatial perception and realism. Among the methods of spatial audio reproduction, binaural audio is particularly favored for its convenience. In recent years, deep learning-based binaural audio synthesis methods have been explored to enhance the spatial quality of binaural audio. However, existing approaches continue to face challenges in phase estimation and the binauralization of out-of-distribution audio. To address these limitations, this paper proposes a novel binaural audio synthesis UNet (BASUNet). Specifically, we employ a time-domain UNet as the primary framework and introduce a multi-level position attention neck module to integrate the sound source’s orientation and position, effectively capturing its movement. Additionally, we incorporate a position fusion (PF) module, which further fuses the sound source's position and orientation during the upsampling and decoding process. Experimental results on the Binaural Speech Dataset demonstrate that the proposed BASUNet can synthesize accurate binaural audio and achieves state-of-the-art performance in phase estimation (Phase-L2: 0.783, Wave-L2: 0.136, Amplitude-L2: 0.035). Furthermore, BASUNet exhibits strong performance in binauralizing audio from out-of-distribution domains.
           </p>
         </div>
       </div>
