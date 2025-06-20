@@ -62,7 +62,7 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">BASUNet: a novel UNet for binaural audio synthesis</h1>
+            <h1 class="title is-1 publication-title">BASUNet: a position attention UNet for binaural audio synthesis</h1>
                   <div class="is-size-5 publication-authors">
                           <!-- Paper authors -->
                     <span class="author-block" style="color: #06a7e7;">
@@ -72,19 +72,19 @@
                       Wenjie Zhang
                     </span>,
                     <span class="author-block" style="color: #06a7e7;">
-                      Weiping Chen<sup><span style="color: black;">*</span></sup>
-                    </span>,
-                    <span class="author-block" style="color: #06a7e7;">
                       Shiyun Xu
                     </span>,
                     <span class="author-block" style="color: #06a7e7;">
                       Mingjiang Wang
+                    </span>,
+                    <span class="author-block" style="color: #06a7e7;">
+                      Weiping Chen<sup><span style="color: black;">*</span></sup>
                     </span>
 
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block"> Harbin Institute of Technology, Harbin Institute of Technology (Shenzhen)<br>EURASIP Journal on Audio, Speech and Music Processing</span>
+                    <span class="author-block"> Harbin Institute of Technology, Harbin Institute of Technology (Shenzhen)<br>Applied Acoustics</span>
                     <span class="eql-cntrb"><small><br><sup>*</sup>Corresponding Author</small></span>
                   </div>
 
@@ -134,13 +134,12 @@
             Among the methods of spatial audio reproduction, binaural audio is particularly favored for its convenience. 
             In recent years, deep learning-based binaural audio synthesis methods have been explored to enhance the spatial quality of binaural audio. 
             However, existing approaches continue to face challenges in phase estimation and the binauralization of out-of-distribution audio. 
-            To address these limitations, this paper proposes a novel binaural audio synthesis UNet (BASUNet). 
-            Specifically, we employ a time-domain UNet as the primary framework and introduce a multi-level position attention neck (MLPAN) module to integrate 
-            the sound source's orientation and position, effectively capturing its movement. 
-            Additionally, we incorporate a position fusion (PF) module, which further fuses the sound source's position and orientation during the upsampling and 
-            decoding process. 
+            To address these limitations, this paper proposes a novel position attention UNet for binaural audio (BASUNet).
+            Specifically, we employ a time-domain UNet as the primary framework and introduce a multi-level position attention neck (MLPAN) module 
+            to integrate the sound source’s orientation and position, effectively capturing its movement. 
+            Additionally, we incorporate a position fusion (PF) module, which further fuses the sound source's position and orientation during the upsampling and decoding process. 
             Experimental results on the Binaural Speech Dataset demonstrate that the proposed BASUNet can synthesize accurate binaural audio and 
-            achieve state-of-the-art performance in phase estimation, improving by 3.0% compared to the best existing approach. 
+            achieve state-of-the-art performance in phase estimation compared to the best existing approach. 
             Furthermore, BASUNet exhibits strong performance in binauralizing audio from out-of-distribution domains.
           </p>
         </div>
